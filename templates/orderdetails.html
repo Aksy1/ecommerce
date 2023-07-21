@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <h2 class="text-center text-success">{{msg}} {{total}}</h2>
+    <h5 class="text-center text-success">Thank You</h5>
+    <p class="text-center"><a href="{% url 'shop:category' %}">Continue Shopping</a></p>
+</div>
+{% endblock %}
